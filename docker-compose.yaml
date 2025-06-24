@@ -1,0 +1,11 @@
+version: '3.8'
+
+services:
+  discord_client:
+    image: fhrozen/py-discord:client
+    environment:
+      - DISCORD_TOKEN=1
+      - DIFY_API_URL=1
+      - DIFY_API_KEY=1
+
+  
