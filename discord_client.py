@@ -1,3 +1,5 @@
+# Code took from https://note.com/jolly_dahlia842/n/n058c486b2e96
+
 import os
 import discord
 from discord.ext import commands
@@ -8,6 +10,7 @@ import aiohttp
 load_dotenv()
 # Bot Access
 TOKEN = os.getenv("DISCORD_TOKEN")  # Discord bot token
+CMD_PREFIX = os.getenv("DISCORD_COMMAND_PREFIX", "!")  # Command Prefix
 DIFY_URL = os.getenv("DIFY_API_URL")  # DIFY API Server URL
 DIFY_KEY = os.getenv("DIFY_API_KEY")  # DIFY API Key
 
@@ -16,7 +19,7 @@ intents = discord.Intents.default()
 intents.messages = True
 intents.message_content = True
 
-client = commands.Bot(command_prefix='!', intents=intents)
+client = commands.Bot(command_prefix=CMD_PREFIX, intents=intents)
 
 
 @client.command()

@@ -6,6 +6,7 @@ COPY requirements.txt .
 RUN pip install -r requirements.txt
 
 ENV DIFY_API_URL=http://localhost/v1
+ENV DISCORD_COMMAND_PREFIX="!"
 # ENV DIFY_API_URL
 # ENV DIFY_API_KEY
 

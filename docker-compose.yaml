@@ -7,5 +7,5 @@ services:
       - DISCORD_TOKEN=1
       - DIFY_API_URL=1
       - DIFY_API_KEY=1
-
+      - DISCORD_COMMAND_PREFIX=!
   
