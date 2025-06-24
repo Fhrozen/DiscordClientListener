@@ -1,0 +1,13 @@
+{
+    "name": "discord-dev",
+    "image": "fhrozen/py-discord:client",
+    "updateRemoteUserUID": false,
+    "features": {},
+    "runArgs": [
+		"--rm",
+		"--name",
+		"discord-devcontainer",
+		"--hostname",
+		"devcontainer"
+	]
+}
